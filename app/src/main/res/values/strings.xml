@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Parcial1MiguelYovanyChanBalam</string>
+    <string name="numero1">Dame numero 1</string>
+    <string name="numero2">Dame numero 2</string>
+    <string name="clic">clic</string>
+    <string name="result">RESULTADO:</string>
+    <string name="btn_sum">SUMAR</string>
+    <string name="btn_res">RESTAR</string>
+    <string name="btn_mul">MULTIPLICAR</string>
+    <string name="btn_div">DIVIDIR</string>
+</resources>
