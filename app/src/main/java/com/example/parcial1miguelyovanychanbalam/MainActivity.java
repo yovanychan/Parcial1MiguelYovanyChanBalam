@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     EditText et1;
     EditText et2;
     TextView resultado;
-    Button suma, resta, dividir, multiplicar;
+    Button suma, resta, multiplicar, dividir;
 
 
     @Override
@@ -24,12 +24,13 @@ public class MainActivity extends AppCompatActivity {
 
         suma = findViewById(R.id.btn_1);
         suma.setOnClickListener(clic);
+        multiplicar = findViewById(R.id.btn_4);
+        multiplicar.setOnClickListener(clic3);
         resta = findViewById(R.id.btn_2);
         resta.setOnClickListener(clic1);
         dividir = findViewById(R.id.btn_3);
         dividir.setOnClickListener(clic2);
-        multiplicar = findViewById(R.id.btn_4);
-        multiplicar.setOnClickListener(clic3);
+
 
 
     }
@@ -73,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 if (!ba.equals("")) {
                     double e1 = Double.parseDouble(ad);
                     double e2 = Double.parseDouble(ba);
-                    double ppresultado = e1 - e2;
+                    double ppresultado = e1 * e2;
                     resultado = findViewById(R.id.tv_1);
                     resultado.setText(String.valueOf(ppresultado));
                 } else {
@@ -100,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                 if (!ba.equals("")) {
                     double e1 = Double.parseDouble(ad);
                     double e2 = Double.parseDouble(ba);
-                    double ppresultado = e1 * e2;
+                    double ppresultado = e1 - e2;
                     resultado = findViewById(R.id.tv_1);
                     resultado.setText(String.valueOf(ppresultado));
                 } else {
